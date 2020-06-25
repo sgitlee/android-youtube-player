@@ -95,7 +95,7 @@ internal class WebViewYouTubePlayer constructor(context: Context, attrs: Attribu
     @SuppressLint("SetJavaScriptEnabled")
     private fun initWebView(playerOptions: IFramePlayerOptions) {
         settings.javaScriptEnabled = true
-        settings.mediaPlaybackRequiresUserGesture = false
+        //settings.mediaPlaybackRequiresUserGesture = false
         settings.cacheMode = WebSettings.LOAD_NO_CACHE
 
         addJavascriptInterface(YouTubePlayerBridge(this), "YouTubePlayerBridge")
